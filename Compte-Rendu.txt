@@ -1,0 +1,25 @@
+Compte Rendu de la Base de Données "Bokify"
+1. Création de la Base de Données :
+La base de données "Bokify" a été initialisée avec succès. Cette base est destinée à gérer divers aspects liés à une organisation, notamment les employés, les salles, les équipements, et les réservations.
+
+2. Structure des Tables :
+La base de données se compose de quatre tables principales :
+
+Employés (Employees) : Cette table stocke les informations des employés, y compris leur ID (clé primaire), nom, email, département, et poste occupé.
+
+Salles (Salles) : Elle enregistre les détails des salles disponibles, notamment l'ID de la salle (clé primaire), le nom de la salle, et sa capacité.
+
+Équipements (Equipements) : Cette table contient des informations sur les équipements disponibles, avec un ID unique pour chaque équipement, l'ID de la salle associée, et le nom de l'équipement. Une clé étrangère fait le lien avec la table des salles.
+
+Réservations (Reservations) : Elle gère les réservations effectuées par les employés, en incluant l'ID de la réservation, les ID des employés et des salles concernées, ainsi que les dates et heures de début et de fin de la réservation. Des clés étrangères assurent la relation avec les tables des employés et des salles.
+
+3. Insertion des Données :
+Des données initiales ont été insérées dans chaque table pour mettre en place le système. Ces insertions comprennent des informations sur les employés, les salles, les équipements, et des exemples de réservations.
+
+4. Requêtes de Sélection :
+Deux requêtes de sélection ont été formulées pour extraire des informations spécifiques :
+
+La première requête extrait les données des employés occupant le poste de "Formateur".
+La seconde requête récupère les informations des réservations dont la date de début est postérieure au 2 novembre 2023.
+5. Conclusion :
+La base de données "Bokify" est désormais opérationnelle et prête à être utilisée pour la gestion efficace des ressources et des activités de l'organisation. Sa conception modulaire permet une extension et une personnalisation facile pour répondre aux besoins futurs.
