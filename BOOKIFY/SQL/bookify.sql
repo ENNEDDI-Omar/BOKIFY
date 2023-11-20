@@ -69,4 +69,9 @@ INSERT INTO Employees (Nom, Email, Departement, Post)
  (4, 1,'2023-10-06 14:00','2023-10-06 17:30' )
 
   
+  SELECT*FROM Employees
+ WHERE Post = 'Formateur';
+ 
+ SELECT*FROM Reservations
+ WHERE Date_Debut > '02-11-2023';
 
