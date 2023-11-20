@@ -77,11 +77,20 @@ INSERT INTO Employees (Nom, Email, Departement, Post),
  (3, 3,'2023-12-22 10:00','2023-12-22 12:30' );
 
   
-  SELECT*FROM Employees
+  SELECT*
+  FROM Employees
  WHERE Post = 'Formateur';
  
- SELECT*FROM Reservations
+ SELECT*
+ FROM Reservations
  WHERE Date_Debut > '02-11-2023';
+
+ SELECT Employees.Nom, Salles.Nom, Reservation.Date_Debut, Reservation.Date_Fin
+ FROM Reservations as R
+ INNER JOIN Employees ON R.Id_Employees = Employees.Id 
+ INNER JOIN Salles ON  R.Id_Salles = Salles.Id 
+ WHERE Nom = 'Omar';
+
 
  
 
